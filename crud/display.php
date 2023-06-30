@@ -62,7 +62,7 @@ $result = mysqli_query($con, $sql);
 
 <div class="button-group">
     <button class="btn btn-dark my-5 hover-effect">
-        <a href="user.php" class="text-light">Add Customer</a>
+        <a href="user.php" class="text-light">Customer</a>
     </button>
 
     <button class="btn btn-dark my-5 hover-effect">
