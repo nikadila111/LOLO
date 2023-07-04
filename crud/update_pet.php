@@ -35,8 +35,8 @@ if (isset($_POST['submit'])) {
     $catImageTmp = $_FILES['catImage']['tmp_name'];
 
     // Move uploaded files to the 'uploads' directory
-    move_uploaded_file($vaccineCardTmp, 'crud/uploads' . $vaccineCard);
-    move_uploaded_file($catImageTmp, 'crud/uploads/' . $catImage);
+    move_uploaded_file($vaccineCardTmp, 'uploads/' . $vaccineCard);
+    move_uploaded_file($catImageTmp, 'uploads/' . $catImage);
 
     $updateSql = "UPDATE `pets` SET
                     petName = '$newPetName',
