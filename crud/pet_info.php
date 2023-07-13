@@ -209,20 +209,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <div class="fill"></div>
         </div>
     </button>&nbsp;&nbsp;&nbsp;
-
-    <a href="#" class="button" onclick="toggleAttendance()">
-                    <span class="button-text">History</span>
-                    <div class="fill-container">
-                        <div class="fill"></div>
-                    </div>
-                </a>&nbsp;&nbsp;&nbsp;
-    
-                <button class="button" onclick="location.href='display.php'">
+    <button class="button" onclick="location.href='display.php'">
         <span class="button-text">Back</span>
         <div class="fill-container">
             <div class="fill"></div>
         </div>
     </button>
+    
 
 </div>
         </div>
@@ -253,7 +246,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <!--second border-->
 
 <div class="container">
-<div class="history my-5" id="attendanceSection" style="display: none;">
+        <div class="history my-5">
             <h1 style="text-decoration: underline; font-family: 'Sacramento'; font-size: 60px;">&nbsp;&nbsp;History &nbsp;&nbsp;</h1><br>
             
          <!-- Include the attendance form from attendance.php -->

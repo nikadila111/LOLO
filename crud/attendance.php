@@ -1,5 +1,5 @@
 <?php
-error_reporting(0);
+error_reporting(0); 
 
 include 'connect.php';
 
@@ -84,7 +84,7 @@ while ($visitRow = mysqli_fetch_assoc($visitResult)) {
                     <thead>
                         <tr>
                             <th>Visit Date</th>
-                            <th>Actions</th>
+                            <th>Activities</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -100,6 +100,7 @@ while ($visitRow = mysqli_fetch_assoc($visitResult)) {
                                         <input class="form-check-input" type="checkbox" name="actions[]" id="boarding-<?php echo $visitDate; ?>" value="boarding" <?php if (isset($visitActions[$visitDate]) && in_array('boarding', $visitActions[$visitDate])) { echo "checked"; } ?>>
                                         <label class="form-check-label" for="boarding-<?php echo $visitDate; ?>">Boarding</label>
                                     </div>
+                                    
                                 </td>
                             </tr>
                         <?php endforeach; ?>

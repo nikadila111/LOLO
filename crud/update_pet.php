@@ -51,8 +51,8 @@ if (isset($_POST['submit'])) {
     $updateResult = mysqli_query($con, $updateSql);
 
     if ($updateResult) {
-        echo "Data updated successfully";
-        // header('location: display.php');
+       // echo "Data updated successfully";
+        header('location: display.php');
     } else {
         die(mysqli_error($con));
     }
